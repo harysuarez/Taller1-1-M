@@ -49,7 +49,47 @@ switch (opc){
         rta=Math.sin(num2);
         System.out.println("Rta: "+ rta);   
         break;
-     
+    case 6:
+        System.out.println("Digite el ángulo");
+        Scanner n6 = new Scanner(System.in);
+        num1=n6.nextFloat();
+        num2=Math.toRadians(num1);
+        rta=Math.cos(num2);
+        System.out.println("Rta: "+ rta);   
+        break;
+    case 7:
+        System.out.println("Digite el ángulo");
+        Scanner n7 = new Scanner(System.in);
+        num1=n7.nextFloat();
+        num2=Math.toRadians(num1);
+        rta=Math.tan(num2);
+        System.out.println("Rta: "+ rta);   
+        break;
+    case 8:
+        System.out.println("Digite el grado de la raiz y el numero a radicar");
+        Scanner n8 = new Scanner(System.in);
+        num1=n8.nextDouble();
+        num2=n8.nextDouble();
+        rta=Math.pow(num2,1/num1);
+        System.out.println("Rta: "+ rta);        
+        break;
+    case 9:
+        System.out.println("Digite el grado de la potencia y el numero a potenciar");
+        Scanner n9 = new Scanner(System.in);
+        num1=n9.nextDouble();
+        num2=n9.nextDouble();
+        rta=Math.pow(num2,num1);
+        System.out.println("Rta: "+ rta);        
+        break;
+    case 10:
+        System.out.println("Digite EL %IVA y el valor al que desea sacarle IVA");
+        Scanner n10 = new Scanner(System.in);
+        num1=n10.nextDouble();
+        num2=n10.nextDouble();
+        rta=(num1/100)*num2;
+        System.out.println("Rta: "+ rta);        
+        break;
+        
 }
 
           
