@@ -68,15 +68,12 @@ switch (opc){
         num2=Math.toRadians(num1);
         double a=Math.sin(num2);
         double b=Math.cos(num2);
-        if (b>0){   
+        if (b==0){   
+         System.out.println("Error: La función es indeterminada");   
+        }else{
         rta=(a/b);
         System.out.println("Rta: "+ rta);   
-        }else{
-        System.out.println("Error: La función es indeterminada");  
         }
-
-     
-        
         break;
     case 8:
         System.out.println("Digite el grado de la raiz y el numero a radicar");
