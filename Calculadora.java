@@ -34,12 +34,16 @@ switch (opc){
         System.out.println("Rta: "+ rta);   
         break;
     case 4: 
-        System.out.println("Digite los numeros que desea restar");
+        System.out.println("Digite los numeros que desea dividir");
         Scanner n4 = new Scanner(System.in);
         num1=n4.nextDouble();
         num2=n4.nextDouble();
+        if (num2>0){
         rta=num1/num2;
         System.out.println("Rta: "+ rta);   
+        }else{
+        System.out.println("Error: no se puede dividir entre 0"); 
+        }
         break;
     case 5:
           System.out.println("Digite el ángulo");
@@ -62,8 +66,17 @@ switch (opc){
         Scanner n7 = new Scanner(System.in);
         num1=n7.nextFloat();
         num2=Math.toRadians(num1);
-        rta=Math.tan(num2);
+        double a=Math.sin(num2);
+        double b=Math.cos(num2);
+        if (b>0){   
+        rta=(a/b);
         System.out.println("Rta: "+ rta);   
+        }else{
+        System.out.println("Error: La función es indeterminada");  
+        }
+
+     
+        
         break;
     case 8:
         System.out.println("Digite el grado de la raiz y el numero a radicar");
