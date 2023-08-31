@@ -46,7 +46,7 @@ switch (opc){
         }
         break;
     case 5:
-          System.out.println("Digite el ángulo");
+        System.out.println("Digite el ángulo");
         Scanner n5 = new Scanner(System.in);
         num1=n5.nextFloat();
         num2=Math.toRadians(num1);
